@@ -1,18 +1,23 @@
 package com.sena.school.escola.model;
 
 public class User {
-	private int id;
+	private int idUser;
 	private String nome;
 	private String login;
+	private String password;
+	
 	
 	public User() {}
 	
-	public User(int id, String nome, String login) {
+
+	public User(int idUser, String nome, String login, String password) {
 		super();
-		this.id = id;
+		this.idUser = idUser;
 		this.nome = nome;
 		this.login = login;
+		this.password = password;
 	}
+
 
 	public String getLogin() {
 		return login;
@@ -24,16 +29,16 @@ public class User {
 
 	
 	public User(int id, String nome) {
-		this.id = id;
+		this.idUser = id;
 		this.nome = nome;
 	}
 	
 	public int getId() {
-		return id;
+		return idUser;
 	}
 	
 	public void setId(int id) {
-		this.id = id;
+		this.idUser = id;
 	}
 	
 	public String getNome() {
@@ -42,5 +47,13 @@ public class User {
 	
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }
