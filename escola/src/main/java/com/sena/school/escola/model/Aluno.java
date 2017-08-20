@@ -1,6 +1,7 @@
 package com.sena.school.escola.model;
 
 public class Aluno extends User implements Autenticavel{
+	
 	private String password;
 	private String login;
 	

@@ -1,7 +1,7 @@
 package com.sena.school.escola.model;
 
 public class User {
-	private int idUser;
+	private int idUser; //matricula
 	private String nome;
 	private String login;
 	private String password;
