@@ -28,36 +28,46 @@ public class Card {
 	public int getIdCard() {
 		return idCard;
 	}
+	
 	public void setIdCard(int idCard) {
 		this.idCard = idCard;
 	}
+	
 	public Date getExpired() {
 		return expired;
 	}
+	
 	public void setExpired(Date expired) {
 		this.expired = expired;
 	}
+	
 	public int getCodeCard() {
 		return codeCard;
 	}
+	
 	public void setCodeCard(int codeCard) {
 		this.codeCard = codeCard;
 	}
 	public boolean isCredit() {
 		return credit;
 	}
+	
 	public void setCredit(boolean credit) {
 		this.credit = credit;
 	}
+	
 	public int getPassword() {
 		return password;
 	}
+	
 	public void setPassword(int password) {
 		this.password = password;
 	}
+	
 	public boolean isBlocked() {
 		return blocked;
 	}
+	
 	public void setBlocked(boolean blocked) {
 		this.blocked = blocked;
 	}
