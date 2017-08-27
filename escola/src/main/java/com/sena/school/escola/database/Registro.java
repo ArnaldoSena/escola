@@ -5,6 +5,7 @@ import java.util.Date;
 public class Registro {
 	
 	private int UserId;
+	private int idCard;
 	private Date dataReg;
 	
 	public int getUserId() {
@@ -21,6 +22,10 @@ public class Registro {
 	
 	public void setDataReg(Date dataReg) {
 		this.dataReg = dataReg;
+	}
+	
+	public String toString() {
+		return "User: " + UserId + ", Card: " + idCard + ", Data: " + dataReg; 
 	}
 	
 }

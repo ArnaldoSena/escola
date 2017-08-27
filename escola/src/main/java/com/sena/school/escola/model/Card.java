@@ -4,6 +4,8 @@ import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.sena.school.escola.database.UserDB;
+
 @XmlRootElement
 public class Card {
 	
@@ -12,14 +14,23 @@ public class Card {
 	private int codeCard = 123; // three number behind
 	private int password = 1234;	
 	private boolean blocked = true;
+	private User usuario;
 	
 	public Card() {}
 	
-	public Card(int idCard, Date expired, int password, boolean blocked) {
+	public Card(int idCard, int codeCard, Date expired, int password, boolean blocked) {
 			this.idCard = idCard;
 			this.expired = expired;
 			this.codeCard = codeCard;
 			this.blocked = blocked;
+	}
+	
+	public void setUserCard(User usuario) {
+		this.usuario = usuario;
+	}
+	
+	public User getUser() {
+		return usuario;
 	}
 	
 	public int getIdCard() {
