@@ -22,4 +22,9 @@ public class MyResource {
     public String getIt() {
         return "Got it!";
     }
+    
+    @POST
+    public void setValue(String valor) {
+    	//nothing to do yet.
+    }
 }
